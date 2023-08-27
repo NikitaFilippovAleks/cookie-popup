@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cookie popup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="cookie-container">
-    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- This is our cookie -->
+    <svg class="cookie" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="cookies-svgrepo-com 1" clip-path="url(#clip0_102_27)">
-      <g id="cookie">
+      <g>
       <path id="Vector" d="M93.6781 48.5078L88.924 49.4586C87.342 49.775 85.752 48.9521 85.0967 47.4777L80.0043 36.0195C79.5732 35.0494 78.7193 34.3322 77.6896 34.0746L75.0367 33.4115C73.5016 33.0277 72.4248 31.6486 72.4248 30.0662V11.6803C72.4248 10.8211 72.1039 9.99277 71.5252 9.35761L65.1201 2.3291C59.3453 0.500388 53.1203 -0.315433 46.6484 0.110739C21.7744 1.74941 1.62421 21.9838 0.106437 46.8652C-1.66446 75.9 21.3586 100 50.0107 100C77.3395 100 99.533 78.0713 99.9893 50.8514L95.8967 48.8051C95.2107 48.4619 94.4301 48.3574 93.6781 48.5078Z" fill="#FFE6A1"/>
       <g id="Group">
       <path id="Vector_2" d="M65.5279 84.4826C65.2244 84.4826 64.9254 84.4652 64.6232 84.4597C62.7287 86.5849 59.9783 87.9308 56.9072 87.9308C52.3838 87.9308 48.5486 85.0226 47.143 80.9781C40.9557 78.5295 35.3748 74.8865 30.6846 70.3263C29.975 70.5402 29.2381 70.6894 28.4588 70.6894C24.1738 70.6894 20.7002 67.2158 20.7002 62.9308C20.7002 61.4344 21.1439 60.0494 21.8779 58.8642C21.8254 58.7703 21.7693 58.6791 21.7172 58.5847C16.3354 58.2199 12.0797 53.7502 12.0797 48.2758C12.0797 45.0494 13.5574 42.1695 15.8721 40.2722C15.6527 38.3717 15.5279 36.4424 15.5279 34.4826C15.5279 24.6488 18.3783 15.4861 23.2812 7.7533C9.29961 16.6181 0.0107422 32.2195 0.0107422 50C0.0107422 77.6142 22.3965 100 50.0107 100C67.7912 100 83.3924 90.7111 92.2574 76.7295C84.5246 81.6324 75.3619 84.4826 65.5279 84.4826Z" fill="#FFD796"/>
@@ -65,15 +69,19 @@
       </g>
       </g>
       <defs>
-      <clipPath id="clip0_102_27">
-      <rect width="100" height="100" fill="white"/>
-      </clipPath>
       </defs>
-      </svg>
-      
+    </svg>
+
+    <div class="text">
+      <h2 class="cookie-title">Cookie Policy</h2>
+
+      <p class="cookie-subtitle">We use analytical cookie (yom) to make your experience on this website better.</p>
+
+      <button>Okay, got it</button>
+    </div>
   </div>
     
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="app.js"></script>
 </body>
 </html>
